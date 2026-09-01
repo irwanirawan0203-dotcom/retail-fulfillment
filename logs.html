@@ -1,1 +1,0 @@
-{% extends "base.html" %}{% block content %}<div class="pagehead"><div><h1>Logs</h1><p>Riwayat aktivitas sistem.</p></div></div>{% for x in logs %}<div class="card row"><div><b>{{x.action}}</b><small>{{x.detail}}</small></div><time>{{x.created_at}}</time></div>{% else %}<div class="card muted">Belum ada aktivitas.</div>{% endfor %}{% endblock %}
